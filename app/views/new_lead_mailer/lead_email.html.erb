@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body style="direction: rtl; text-align: center; margin: 0; padding: 0;">
+<img src="https://i.ibb.co/vBYNyXF/image.png" alt="new logo">
+<h1 style="text-align: center;"> לקוחה חדשה:</h1>
+<table rules="all" style="border-color: #666; cellpadding: 10px; cellspaceing: 10px; margin-top: 10px; text-align: center; border-spacing: 2px;
+    font-size:120%; padding: 5px; margin: auto;">
+  <tr style='background: #eee;'>
+    <td><strong>שם ומשפחה:</strong></td>
+    <td><%= @customer.fname %> <%=@customer.lname %></td>
+  </tr>
+  <tr>
+    <td><strong>אימייל:</strong></td>
+    <td><%=@customer.email || ' ' %></td>
+  </tr>
+  <tr>
+    <td style='background: #eee;'><strong>טלפון:</strong></td>
+    <td><%= @customer.phone %></td>
+  </tr>
+  <tr>
+    <td><strong>הודעה:</strong></td>
+    <td><%= @customer.msg %></td>
+  </tr>
+
+</table>
+</body>
+
+</html>
