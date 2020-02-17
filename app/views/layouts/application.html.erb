@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>פאות חני פישר</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'true' %>
+
+  <%= stylesheet_link_tag 'https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+<div class="container-fluid" style="min-height: 80px">
+  <div class="container bg-site rounded border-bottom-dark">
+    <nav class="navbar navbar-expand-md p-0 text-gold static-top rounded mr-1">
+      <h1 class="font-weight-bold text-center text-strong mx-auto"><u>חני פישר פאות</u></h1>
+      <a class="navbar-brand ml-5 mx-sm-auto" href="#">
+        <%= image_tag 'Document-page-001.jpg', size: '200x75', alt: 'hani_new_logo', class: 'img-fluid img-media' %>
+      </a>
+    </nav>
+  </div>
+</div>
+
+
+<%= yield %>
+
+<%= javascript_include_tag 'https://code.jquery.com/jquery-3.3.1.slim.min.js' %>
+<%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' %>
+<%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' %>
+</body>
+</html>
