@@ -31,6 +31,30 @@ form , .bg-custom{
   background: rgb(242,149,125);
   background: radial-gradient(circle, rgba(242,149,125,1) 0%, rgba(191,167,109,0.9389735630580357) 100%, rgba(0,212,255,1) 100%);
 }
+//whatsapp button
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:6%;
+  right:40px;
+  //background-color:#25d366;
+  //color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  //font-size:30px;
+  //box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  //overflow: auto;
+}
+.fa-whatsapp  {
+  color:#fff;
+  background:linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,radial-gradient(#25d366 60%,transparent 0);
+}
+
+.my-float{
+  margin-top:16px;
+}
 @media only screen and (max-width: 592px) {
   .img-media{
     max-width: 50%;
