@@ -23,14 +23,6 @@ default: &default
 #  password: gila10
 #  socket: /tmp/mysql.sock
 
-heroku:
-  adapter: postgresql
-  database: del6qtivbcqmea
-  username: dwrkwgfylxjmyw
-  password: a49738532fdecea7a0e5e66522e60b1af3ddf4d21e8eb19219dcc81117f843cc
-  host: ec2-46-137-84-173.eu-west-1.compute.amazonaws.com
-
-
 development: &development
   adapter: postgresql
   encoding: utf8
