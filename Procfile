@@ -1,1 +1,1 @@
-web: bundle exec rails server -p $PORT -e production assets:precompile 
+web: bundle exec rails server -p $PORT -e production
