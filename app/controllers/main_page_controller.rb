@@ -1,6 +1,7 @@
 class MainPageController < ApplicationController
   def index
     @customer || Customer.new
+    @whatsapp_number = ENV['WHATSAPP_NUMBER'] || '972526626511'
   end
 
   def new

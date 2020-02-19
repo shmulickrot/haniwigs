@@ -1,7 +1,8 @@
 // Place all the styles related to the MainPage controller here.
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import url('https://fonts.googleapis.com/css?family=David+Libre&display=swap" rel="stylesheet');
+//@import url('https://fonts.googleapis.com/css?family=David+Libre&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet');
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
@@ -12,8 +13,12 @@
 html {
   font-size: 1rem;
 }
+.line li{
+  line-height: 2em !important;
+}
 body {
-  font-family: 'David Libre', serif !important;
+  //font-family: 'David Libre', serif !important;
+  font-family: 'Rubik', sans-serif !important;
 }
 .bg-site {
   background-color: #fbc3b4;
@@ -52,10 +57,12 @@ form , .bg-custom{
   background:linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,radial-gradient(#25d366 60%,transparent 0);
 }
 
-.my-float{
-  margin-top:16px;
+// carousel small not display in non mobile
+.small_only {
+  display: none;
 }
-@media only screen and (max-width: 592px) {
+
+@media only screen and (max-width: 767px) {
   .img-media{
     max-width: 50%;
     margin-right: auto!important;
@@ -66,10 +73,22 @@ form , .bg-custom{
   h1 {
     font-size: 8vw;
   }
+  .carousel-nav-icon{
+    display: none;
+  }
   .paralex_new_logo {
     background-image: url('new_logo_with_text.jpeg');
   }
+  .small_only {
+    display: block;
+  }
+  .medium {
+    display: none;
+  }
 }
+// end of media queries
+
+
 .row-opacity {
   opacity: .7;
 }
@@ -99,7 +118,7 @@ h2
 .carousel-item {
   .col, .col-sm, .col-md {
     margin: 8px;
-    height: 300px;
+    height: 250px;
     background-size: cover;
     background-position: center center;
   }
