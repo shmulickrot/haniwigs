@@ -2,7 +2,7 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //@import url('https://fonts.googleapis.com/css?family=David+Libre&display=swap" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Rubik|Roboto:500i&display=swap" rel="stylesheet');
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
@@ -15,6 +15,9 @@ html {
 }
 .line li{
   line-height: 2em !important;
+  transition-property: position;
+  transition-delay: 1s;
+
 }
 body {
   //font-family: 'David Libre', serif !important;
@@ -65,10 +68,14 @@ form , .bg-custom{
 .tel-size {
   font-size: 3em;
 }
+.tel-font {
+  font-family: 'Roboto', sans-serif !important;
+}
 
 // carousel small not display in non mobile
 .small_only {
   display: none;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
@@ -90,9 +97,11 @@ form , .bg-custom{
   }
   .small_only {
     display: block;
+    overflow: hidden;
   }
   .medium {
     display: none;
+    overflow: hidden;
   }
   .wa-size {
     font-size: 4em;
@@ -126,11 +135,15 @@ h2
 }
 
 // code for carousel
+.carousel {
+  overflow: hidden;
+}
 .carousel-nav-icon {
   height: 48px;
   width: 48px;
 }
 .carousel-item {
+  width: 100%;
   .col, .col-sm, .col-md {
     margin: 8px;
     height: 250px;
