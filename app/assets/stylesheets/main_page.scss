@@ -29,7 +29,10 @@ body {
 .container-fluid {
   //background-color: #ae9a6b;
   background: rgb(251,195,180);
-  background: linear-gradient(90deg, rgba(251,195,180,1) 0%, rgba(174,154,107,0.9389735630580357) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(260deg, rgba(251,195,180,1) 0%, rgba(174,154,107,0.9389735630580357) 100%, rgba(0,212,255,1) 100%);
+}
+.heading h2{
+  display: inline-grid;
 }
 
 form , .bg-custom{
@@ -55,6 +58,9 @@ form , .bg-custom{
 .fa-whatsapp  {
   color:#fff;
   background:linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,radial-gradient(#25d366 60%,transparent 0);
+}
+.wa-size {
+  font-size: 5em;
 }
 
 // carousel small not display in non mobile
@@ -84,6 +90,9 @@ form , .bg-custom{
   }
   .medium {
     display: none;
+  }
+  .wa-size {
+    font-size: 4em;
   }
 }
 // end of media queries
