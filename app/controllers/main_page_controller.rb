@@ -18,8 +18,8 @@ class MainPageController < ApplicationController
       rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
         Rails.logger.error e.message
       end
-      render :'thanks/index', locals: {customer: @customer}
-
+      # render :'thanks/index', locals: {customer: @customer}
+      redirect_to thanks_path customer: @customer
       # end
     else
       flash[:error] = @customer.errors

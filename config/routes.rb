@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :main_page
   # get 'main_page', to: 'main_page#index'
   get '*', to: 'main_page#index'
+  get 'thanks', to: 'thanks#index'
+  get "*path", to: redirect('/')
 end
