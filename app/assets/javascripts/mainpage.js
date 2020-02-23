@@ -6,7 +6,7 @@ $(document).on('turbolinks:load', function () {
 });
 
 function animate() {
-    const elements = document.querySelectorAll('li, h1,h3,i,p,img.mb-3');
+    const elements = document.querySelectorAll('li, h1,i,p,img.mb-3');
     elements.forEach(elem => {
         Object.assign(elem.style, {'animation-duration': "3s"})
     });
