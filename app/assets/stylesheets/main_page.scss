@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik|Roboto:500i&display=swap" rel="stylesheet');
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "animate";
 
 *{
   box-sizing: border-box;
@@ -42,6 +43,7 @@ form , .bg-custom{
   background: rgb(242,149,125);
   background: radial-gradient(circle, rgba(242,149,125,1) 0%, rgba(191,167,109,0.9389735630580357) 100%, rgba(0,212,255,1) 100%);
 }
+
 //whatsapp button
 .float{
   position:fixed;

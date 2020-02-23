@@ -6,6 +6,7 @@ ruby '2.5.5'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sprockets-rails'
 gem 'google-tag-manager-rails'
+gem "animate-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
