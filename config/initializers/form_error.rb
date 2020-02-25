@@ -9,7 +9,7 @@ ActionView::Base.field_error_proc = Proc.new do |html_tag, instance_tag|
            field['class'] = "#{field['class']} invalid"
            html = <<-HTML
               #{fragment.to_s}
-              <p class="error" id="error_field">#{error_message}</p>
+              <span class="error" id="error_field">#{error_message}</span>
            HTML
            html
          else
