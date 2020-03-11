@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   get '*', to: 'main_page#index'
   get 'thanks', to: 'thanks#index'
   get "*path", to: redirect('/')
+  constraints(host: /^(?!www\.)/i) do
+    match '(*any)' => redirect { |params, request|
+      URI.parse(request.url).tap { |uri| uri.host = "www.#{uri.host}" }.to_s
+    }, via: [:get,:post]
+  end
 end
